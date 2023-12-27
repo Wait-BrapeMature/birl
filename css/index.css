@@ -1,0 +1,129 @@
+#game{
+    width: 100%;
+    height: 600px;
+    background-image: url('../images/sky.png');
+    position: relative;
+    overflow: hidden;
+}
+.bird{
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/birds.png');
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    top: 235px;
+    transition: top .3s linear;
+}
+.start{
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 295px;
+    font-weight: bolder;
+    color: #fff;
+    font-size: 24px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.blue{
+    color: #09f;
+    font-size: 36px;
+}
+.score{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 1;
+    display: none;
+}
+.mask{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .7;
+    z-index: 2;
+    display: none;
+}
+.end{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+.over{
+    font-size: 36px;
+    font-weight: bolder;
+    color: red;
+}
+.result,
+.end-score{
+    margin-top: 20px;
+    color: #ff0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.end-item{
+    color: #09f;
+    margin-top: 20px;
+}
+.list{
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.list-rank{
+    width: 14px;
+    height: 14px;
+    color: #FFF;
+    background-color: #8eb9f5;
+    display: inline-block;
+    line-height: 14px;
+    margin-right: 10px;
+}
+.list-score{
+    display: inline-block;
+    width: 30px;
+}
+.continue{
+    color: #09f;
+    font-size: 18px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.pipe{
+    width: 52px;
+    position: absolute;
+}
+.pipe-up{
+    background-image: url('../images/pipe2.png');
+    top: 0;
+    background-position-y: bottom;
+}
+.pipe-down{
+    background-image: url('../images/pipe1.png');
+    bottom: 0;
+}
+.rankcolor1{
+    background-color: #f54545;
+}
+.rankcolor2{
+    background-color: #ff8547;
+}
+.rankcolor3{
+    background-color: #ffac38;
+}
